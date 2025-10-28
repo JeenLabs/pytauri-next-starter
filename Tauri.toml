@@ -4,7 +4,7 @@ version = "0.1.0"
 identifier = "com.pytauri-next-starter.app"
 
 [build]
-frontendDist = "./frontend" #TODO: Need to point towards NextJS build dist path.
+frontendDist = "./out"
 
 [app]
 withGlobalTauri = true

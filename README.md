@@ -59,28 +59,38 @@ Install all nextjs dependencies declared in `package.json`:
 ```bash
 pnpm install
 ```
-### 5. Run NextJS frontend
 
-```bash
-pnpm dev
-#or
-npm run dev
-# or
-yarn dev
-# or
-bun dev
-```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Run Application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**For Development Mode (with hot reload):**
+1. First, start the Next.js development server:
+   ```bash
+   pnpm dev
+   ```
+2. Then, in a separate terminal, run the Python app with development mode:
 
-### 6. Run Application
+   **Windows PowerShell:**
+   ```powershell
+   $env:PYTAURI_NEXTJS_DEV="1"; python main.py
+   ```
 
-Run backend python application:
+   **Windows Command Prompt:**
+   ```cmd
+   set PYTAURI_NEXTJS_DEV=1 && python main.py
+   ```
 
-```bash
-python -m main
-#or
-python main.py
-```
+   **macOS/Linux:**
+   ```bash
+   PYTAURI_NEXTJS_DEV=1 python main.py
+   ```
+
+**For Production Mode:**
+1. Build the Next.js frontend:
+   ```bash
+   pnpm build
+   ```
+2. Run the Python app:
+   ```bash
+   python main.py
+   ```
 ---
