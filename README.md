@@ -52,17 +52,35 @@ Install all project dependencies declared in `pyproject.toml`:
 uv sync
 ```
 
-### 4. Run Application
+### 4. Install NextJS dependencies
+
+Install all nextjs dependencies declared in `package.json`:
+
+```bash
+pnpm install
+```
+### 5. Run NextJS frontend
+
+```bash
+pnpm dev
+#or
+npm run dev
+# or
+yarn dev
+# or
+bun dev
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+### 6. Run Application
 
 Run backend python application:
 
 ```bash
 python -m main
-```
-
-or
-
-```bash
+#or
 python main.py
 ```
 ---
