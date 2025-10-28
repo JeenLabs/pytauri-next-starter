@@ -52,4 +52,17 @@ Install all project dependencies declared in `pyproject.toml`:
 uv sync
 ```
 
+### 4. Run Application
+
+Run backend python application:
+
+```bash
+python -m main
+```
+
+or
+
+```bash
+python main.py
+```
 ---
