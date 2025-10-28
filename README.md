@@ -1,2 +1,55 @@
 # pytauri-next-starter
+
 Cross-platform desktop application starter built with Pytauri, Next.js (TypeScript), and Python Wheel — combining modern web UIs with powerful Python backends.
+
+---
+
+## 🛠️ Project Initialization Guide
+
+Follow these steps to set up the project after cloning the repository.
+
+---
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/JeenLabs/pytauri-next-starter.git
+cd pytauri-next-starter
+```
+
+### 2. Set Up Python Environment (Backend)
+
+Make sure you have [uv](https://github.com/astral-sh/uv) installed.
+
+If not, install it:
+
+```bash
+pip install uv
+```
+
+Then create and activate a virtual environment:
+
+```bash
+uv venv .venv
+```
+
+Activate it:
+
+* **macOS/Linux** :
+  ```bash
+  source .venv/bin/activate
+  ```
+* **Windows (PowerShell)** :
+  ```bash
+  .venv\Scripts\Activate.ps1
+  ```
+
+### 3. Install Python Dependencies
+
+Install all project dependencies declared in `pyproject.toml`:
+
+```bash
+uv sync
+```
+
+---
