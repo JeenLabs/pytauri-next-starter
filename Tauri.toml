@@ -1,0 +1,15 @@
+"$schema" = "https://schema.tauri.app/config/2"
+productName = "pytauri-next-starter"
+version = "0.1.0"
+identifier = "com.pytauri-next-starter.app"
+
+[build]
+frontendDist = "./frontend" #TODO: Need to point towards NextJS build dist path.
+
+[app]
+withGlobalTauri = true
+
+[[app.windows]]
+title = "pytauri-next-starter"
+width = 800
+height = 600
