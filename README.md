@@ -93,4 +93,35 @@ pnpm install
    ```bash
    python main.py
    ```
+
+---
+
+## 📦 Building Wheel Distribution
+
+To create a Python wheel distribution of your app:
+
+### Build Steps
+1. **Build the frontend:**
+   ```bash
+   pnpm build
+   ```
+2. **Build the wheel:**
+   ```bash
+   uv build
+   ```
+3. **Installation to Test the wheel:**
+   ```bash
+   pip install dist/pytauri_next_starter-0.1.0-py3-none-any.whl
+   ```
+3. ** Launch to Test the wheel:**
+   ```bash
+   pip install dist/pytauri_next_starter-0.1.0-py3-none-any.whl
+   ```
+5. **Publish to PyPI (optional):**
+   ```bash
+   uv publish
+   ```
+
+The wheel will be created in the `dist/` directory and can be distributed or uploaded to PyPI.
+
 ---
