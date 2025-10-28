@@ -4,4 +4,6 @@ version = "0.1.0"
 description = "Cross-platform desktop application starter built with Pytauri, Next.js (TypeScript), and Python Wheel — combining modern web UIs with powerful Python backends."
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pytauri-wheel==0.8.0",
+]
